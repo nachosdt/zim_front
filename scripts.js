@@ -111,7 +111,7 @@ function actualizarFoto(foto) {
 }
 
 async function addFoto() {    
-    let url = `http://localhost:3000/fotos`;    
+    let url = `https://zimback.herokuapp.com/fotos`;    
     let param = {
         headers: {'Content-Type': 'application/json; charset = UTF-8'},     
         method: "POST",
@@ -127,7 +127,7 @@ async function addFoto() {
 }
 
 async function dataDB() {
-    let url = `http://localhost:3000/fotos`;    
+    let url = `https://zimback.herokuapp.com/fotos`;    
     let param = {
         headers: {'Content-Type': 'application/json; charset = UTF-8'},     
         method: "GET"
@@ -200,7 +200,7 @@ async function deleteFoto(e) {
     let fotoString = fila.getAttribute("data-foto");
     let foto = JSON.parse(fotoString);
 
-    let url = `http://localhost:3000/fotos`;    
+    let url = `https://zimback.herokuapp.com/fotos`;    
     let param = {
         headers: {'Content-Type': 'application/json; charset = UTF-8'},     
         method: "DELETE",
@@ -292,7 +292,7 @@ async function updateFoto(e) {
     let fotoString = fila.getAttribute("data-foto");
     let foto = JSON.parse(fotoString);
 
-    let url = `http://localhost:3000/fotos`;    
+    let url = `https://zimback.herokuapp.com/fotos`;    
     let param = {
         headers: {'Content-Type': 'application/json; charset = UTF-8'},     
         method: "PUT",
