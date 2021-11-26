@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("image/NASA.png");
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: 600px 502px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+
+nav>li {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+nav>li:hover {
+    background-color: rgb(156, 18, 18);
+}
+
+.selected {
+    background-color: rgb(250, 25, 25);
+}
+
+.selected:hover {
+    background-color: rgb(156, 18, 18);
+}
+
+#formAPI, #formDB {    
+    background-color: black;
+    color: white;
+    padding: 20px;     
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#formAPI * {
+    margin: 0 15px;
+}
+
+button {
+    padding: 15px;
+    cursor: pointer;
+}
+
+#formAPI input[type="text"] {
+    width: 33%;
+    padding: 5px;
+}
+
+.activo {
+    display: flex;
+}
+
+.oculto {
+    display: none;
+}
+
+#contenedor {
+    background-color: white;
+}
+
+#datosAPI {      
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#contenido {    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+}
+
+#contenido * {
+    margin: 20px 0;
+}
+
+#video {
+    margin: 50px;
+}
+
+#tabla {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    
+}
+
+td img {
+    width: 150px;
+}
+
+
+
