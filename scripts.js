@@ -72,7 +72,7 @@ async function dataAPI() {
         inicio = false;       
         let data = {date: date.value, key: key.value};
         console.log(data);
-        let url = `https://api.nasa.gov/planetary/apod?date=${date.value}&api_key=TEZBCHPW0JSsQz2oJvCuxzrVFZcYldbaijHSB2EJ`;
+        let url = `https://api.nasa.gov/planetary/apod?date=${date.value}&api_key=${data.key}`;
         param = {
             headers:{"Content-Type": "application/json: charSet=UTF-8"},
             method: "GET"
